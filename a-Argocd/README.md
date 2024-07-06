@@ -240,6 +240,7 @@ The "Repositories" section in the Argo CD interface is a critical component for 
 
 **Notifications and Alerts:** Can configure notifications and alerts about changes made to repositories. This makes it easier for teams to track changes and sync statuses.
 
+<br><br>
 
 We make Repo connections for the application we want to create.
 
@@ -256,6 +257,38 @@ We make Repo connections for the application we want to create.
   </tr>
 </table>
 
+
+# Creating the application
+
+### Step 1- Click the "New App" button.
+
+![a3-Repositories](images/a7-New-App.png)
+
+### Step 2- Fill in the application information in the General tab:
+
+**Application Name:** The name of the application.  
+
+**Project:** The project to which the application belongs (default may be default).  
+
+**Sync Policy:** Select the synchronization policy (Manual or Automated).
+
+![a3-Repositories](images/a8-General-settings.png)
+
+### Step 3- In the Source tab, fill in the source information:
+
+**Repository URL:** Git repository URL.  
+
+**Revision:** The Git branch you want to use (for example, main or master).  
+
+**Path:** The directory where Kubernetes manifest files are located (for example, path/to/manifests).
+
+![a3-Repositories](images/a9-Source-Destination-Settings.png) 
+
+### Step 4- In the Destination tab, fill in the target cluster information:
+
+**Cluster URL:** API URL of the target Kubernetes cluster (https://kubernetes.default.svc is usually the default local cluster URL).
+
+**Namespace:** The Kubernetes namespace (for example, default) where the application will be deployed.
 
 
 
