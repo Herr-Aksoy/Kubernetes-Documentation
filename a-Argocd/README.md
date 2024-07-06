@@ -37,16 +37,21 @@ az aks create \
     --location northeurope \
     --debug
 
-
 ``` 
 
-**❗Example size:** Standard_B2s
+**❗Example size:** Standard_B2s  
 
+
+Commands to delete the created Kubernetes Cluster. At the end of our work, you can remove the cluster.
+
+```sh
 
 az aks delete \
     --resource-group MyAKS-rg \
     --name MyAKSCluster \
     --yes --verbose
+
+```   
 
 
 ### Step 4- Download and set the kubectl configuration file:
@@ -299,7 +304,7 @@ We make Repo connections for the application we want to create.
 
 <br><br>
 
-After pressing the Create button, the application will be created by Argocd as follows.
+After pressing the Create button, the application will be created by Argocd as follows.  
 
 
 ![a3-Repositories](images/b1-Applications.png)
