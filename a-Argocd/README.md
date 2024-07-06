@@ -241,7 +241,20 @@ The "Repositories" section in the Argo CD interface is a critical component for 
 **Notifications and Alerts:** Can configure notifications and alerts about changes made to repositories. This makes it easier for teams to track changes and sync statuses.
 
 
+We make Repo connections for the application we want to create.
 
+<table>
+  <tr>
+    <td><img src="images/a4-Connet-Repo.png" alt="Connet-Repo" width="250"></td>
+    <td><img src="/images/a5-Repo-settings.png" alt="Repo-settings" width="250"></td>
+    <td><img src="/images/a6-Repo-Successful.png" alt="Repo-Successful" width="250"></td>
+  </tr>
+    <tr>
+    <td><a  title="Settings">Connet-Repo</a></td>
+    <td><a  title="Settings">Repo-settings</a></td>
+    <td><a  title="Settings">Repo-Successful</a></td>
+  </tr>
+</table>
 
 
 
