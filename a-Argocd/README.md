@@ -164,6 +164,88 @@ Enter the admin username and password in the Argocd interface that opens.
 ![a1-sing-in](images/a1-sing-in.png)
 
 
+# Argocd > Settings > Projects configuration
+
+The **"Projects"** section on the Argo CD provides a powerful tool to better organize, isolate and manage applications, users and resources. This both increases security and simplifies management in large-scale installations. Each project acts as an independent management unit on its own, allowing teams to manage their own workloads more effectively.
+
+![a2-Projects](images/a2-Projects.png)
+
+### 1- Insulation and Security
+
+**Cross-Team Isolation:** Different teams or departments can manage their own applications within separate projects. This way, changes made by one team do not affect other teams.  
+
+**Security Policies:** You can define specific access controls for each project. This allows you to control which users or roles can access or make changes to certain projects.
+
+### 2- Resource Management
+
+**Resource Quotas:** Projects can be configured with specific resource usage quotas. For example, you can allow a particular project to use a certain number of applications or a certain amount of resources.  
+
+**Resource Boundaries:** By defining which resource pools (e.g. Git repositories, Kubernetes clusters) can be used by which projects, you can ensure that resources are managed and used correctly.
+
+### 3- Application Grouping
+
+**Logical Grouping:** Can be used to logically group applications associated with a project, a specific business unit, product, or customer. This makes it easier to manage and monitor applications.
+
+**Shared Settings:** Settings defined at the project level (e.g., access to a specific GitHub organization) can be applied to all applications in the project, making the settings consistent and easy to manage.
+
+### 4- Policy Implementation
+
+**Open Policy Management:** You can manage and enforce application policies through projects. For example, you can only allow deployments from a specific branch for a specific project.
+
+**Security Policies:** By setting RBAC (Role-Based Access Control) rules, you can control which users or teams can perform which actions on which projects.
+
+### 5- Multi-Tenancy Support
+
+**Multi-tenancy:** Projects make it possible to use Argo CD in multi-tenancy environments. This allows multiple users or teams to use the same Argo CD server but remain isolated in their own projects.
+
+# Argocd > Settings > Repositories configuration
+
+The "Repositories" section in the Argo CD interface is a critical component for managing Git repositories that form the basis of application deployments. This section provides all the necessary settings and configurations to effectively manage GitOps processes, allowing application deployments to be done automatically and securely.  
+
+![a3-Repositories](images/a3-Repositories.png)
+
+### 1- Defining Git Repositories
+
+**Add Link:** Used to add new Git repositories to the Argo CD. This defines the repositories from which Argo CD will retrieve application manifest files (e.g. Helm charts, Kustomize directories, plain YAML files).
+
+**Multiple Repository Support:** You can add and manage multiple Git repositories. This allows you to use different repositories for different projects or teams.
+
+### 2- Authentication and Access Management
+
+**Authentication Information:** You can define access credentials (e.g. SSH keys, personal access tokens) for each repository. This allows Argo CD to access private repositories.  
+
+**Secure Access:** Authentication and authorization information is stored here for secure management of repositories. This ensures that only authorized users have access to certain repositories.
+
+### 3- Repository Configuration and Settings
+
+**Repository URL:** The URL of the Git repository, which allows Argo CD to link to this repository.
+
+**Proxy and TLS Settings:** You can manage proxy settings and TLS configurations as needed. This is important for secure connections and network configurations.
+
+### 4- Repository Types and Support
+
+**Various Git Platforms:** Supports different Git platforms such as GitHub, GitLab, Bitbucket. This allows you to integrate your organization's existing Git infrastructure with Argo CD.  
+
+**Repository Formats:** Supports repositories in different formats and layouts (e.g. Helm chart repositories, Kustomize directories).
+
+### 5- Access Policies
+
+**Warehouse-Based Policy Application:** You can define specific policies for each warehouse. For example, you can allow only certain branches to be used.
+
+**RBAC Support:** With Role-Based Access Control (RBAC), you can manage which users can access and make changes to which repositories.
+
+### 6- Auto Sync and Tracking
+
+**Change Tracking:** Argo CD can automatically track changes to defined Git repositories and sync those changes to the Kubernetes cluster.  
+
+**Notifications and Alerts:** Can configure notifications and alerts about changes made to repositories. This makes it easier for teams to track changes and sync statuses.
+
+
+
+
+
+
+
 
 
 
