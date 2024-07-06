@@ -257,12 +257,17 @@ We make Repo connections for the application we want to create.
   </tr>
 </table>
 
+<br><br>
 
 # Creating the application
+
+<br><br>
 
 ### Step 1- Click the "New App" button.
 
 ![a3-Repositories](images/a7-New-App.png)
+
+<br><br>
 
 ### Step 2- Fill in the application information in the General tab:
 
@@ -273,6 +278,8 @@ We make Repo connections for the application we want to create.
 **Sync Policy:** Select the synchronization policy (Manual or Automated).
 
 ![a3-Repositories](images/a8-General-settings.png)
+
+<br><br>
 
 ### Step 3- In the Source tab, fill in the source information:
 
@@ -290,7 +297,12 @@ We make Repo connections for the application we want to create.
 
 **Namespace:** The Kubernetes namespace (for example, default) where the application will be deployed.
 
+<br><br>
 
+After pressing the Create button, the application will be created by Argocd as follows.
+
+
+![a3-Repositories](images/b1-Applications.png)
 
 
 
